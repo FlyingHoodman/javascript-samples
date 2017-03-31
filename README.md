@@ -19,6 +19,22 @@ Golo Roden
 - 16.06.2017
 - 23.06.2017 (halber Tag)
 
+## npm-Aufrufe
+
+```bash
+# Install latest version of Express
+$ npm install express
+
+# Install specific version of Express
+$ npm install express@x.y.z
+
+# Install and save to package.json
+$ npm install <module> --save --save-exact
+
+# Install everything registered in package.json
+$ npm install
+```
+
 ## OpenSSL-Aufrufe
 
 ```bash
