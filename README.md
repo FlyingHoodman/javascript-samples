@@ -18,3 +18,16 @@ Golo Roden
 - 02.06.2017
 - 16.06.2017
 - 23.06.2017 (halber Tag)
+
+## OpenSSL-Aufrufe
+
+```bash
+# Create a private key
+$ openssl genrsa -out privateKey.pem 4096
+
+# Create a certificate signing request (CSR)
+$ openssl req -new -key privateKey.pem -out csr.pem
+
+# Create the certificate
+$ openssl x509 -in csr.pem -out certificate.pem -req -signkey privateKey.pem -days 365
+```
